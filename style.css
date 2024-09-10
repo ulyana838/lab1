@@ -134,7 +134,7 @@ a:hover {
 }
 footer{
     justify-content: space-around;
-    background: #a9088e; 
+    background: #9f078d; 
     text-align: center;
     padding: 6px;
     margin-bottom: 0px;
@@ -156,7 +156,7 @@ footer{
     font-size: 12px;
 }
 #start:hover{
-    background-color: #f28d11;
+    background-color: #11f220;
 }
 /*like and support*/
 .buttons-container {
