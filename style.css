@@ -1,0 +1,264 @@
+/* bootstrap5 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    background-color: #fcece8;
+    min-width: 320px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+section {
+    padding: 0px 0;
+}
+a {
+    color:#473204; 
+}
+a:hover {
+    color: #db7609;
+}
+/* Header */
+.navbar-light .navbar-nav .nav-link {
+    color: #473204;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.top-menu li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #f76002;
+    height: 1px;
+    transition: all .3s;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+/* Header*/
+
+/* Carousel */
+.my-carousel {
+    padding: 0;
+}
+.my-carousel .carousel-item {
+    display: flex;
+    max-height: 500px;
+}
+
+.my-carousel .carousel-item img {
+    object-fit: cover;
+}
+.carousel-caption h5{
+    margin-bottom: 0px;
+    font-size: 50px;
+    color: firebrick;
+}
+
+/* Carousel */
+
+/* Product card*/
+.product-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0 , 0.06);
+    transition: all .3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0 , 0.75);
+}
+
+.product-thumb a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    padding: 20px;
+}
+
+.product-thumb img {
+    max-width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h4 a {
+    margin-top: 60px;
+    font-weight: 500;
+    display: block;
+    height: 90px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.product-details p {
+    font-size: 15px;
+    margin-bottom: 18px;
+    color: #999;
+    height: 350px;
+}
+
+.product-bottom-details {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-links a {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* Product card*/
+
+.row img {
+    max-width: 100%;
+    height: auto;
+    
+}
+footer{
+    justify-content: space-around;
+    background: #ffcb8c; 
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 0px;
+    margin-top: 9px;
+    display: block;
+    text-transform: uppercase;
+}
+#start {
+    background:#ffcb8c ;
+    color: #693a02;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 55%;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    font-size: 12px;
+}
+#start:hover{
+    background-color: #f28d11;
+}
+/*like and support*/
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcece8;
+  color: #561300;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.supportButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcece8;
+  color: #561300;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.supportButton:hover {
+  background-color: #c77108;
+}
+
+.likeButton:hover {
+  background-color: #c77108;
+}
+
+.button-icon {
+  margin-right: 8px;
+}
+
+
+
+
+/*svg*/
+.svg {
+  text-align: center;  /* выравнивание содержимого SVG по центру */
+}
+
+:root {
+  --pink: #ff2581;  /* определение переменной цвета розовый */
+}
+
+.icon {
+
+  svg {
+    overflow: visible;  /* содержимое SVG, которое выходит за пределы границ, будет видно */
+    width: 5rem;  /* ширина SVG */
+  }
+
+  path {
+    stroke-dashoffset: 0;  /* смещение тире от начала линии */
+    stroke-dasharray: 1550;  /* длина тире и пробелов между ними */
+    transform-origin: center;  /* точка, относительно которой происходит преобразование, находится в центре */
+  }
+
+  .heart-main:hover path {  /* при наведении на элемент с классом heart-main применяются следующие стили к элементу path */
+    animation: stroke-animation 2s ease-in-out forwards;  /* применяется анимация с именем stroke-animation, длительностью 2 секунды, с плавным ускорением и замедлением, и с возвратом к исходному состоянию в конце */
+  }
+
+}
+
+@keyframes stroke-animation {  /* определение анимации с именем stroke-animation */
+  0% {  /* стили применяются в начале анимации */
+    stroke-dashoffset: 0;  /* смещение тире отсутствует */
+  }
+  30% {  /* стили применяются на 30% длительности анимации */
+    stroke-dashoffset: 1550;  /* смещение тире равно длине тире и пробелов между ними */
+  }
+  60% {  /* стили применяются на 60% длительности а
+```
+мации */
+stroke-dashoffset: 3100; /* смещение тире равно длине тире и пробелов между ними, умноженной на 2 */
+fill:transparent; /* заливка прозрачная */
+transform: scale(1); /* преобразование отсутствует */
+}
+80% { /* стили применяются на 80% длительности анимации */
+fill: var(--pink); /* заливка розового цвета, используется переменная цвета */
+transform: scale(1.1); /* преобразование увеличивает элемент на 10% */
+}
+90% { /* стили применяются на 90% длительности анимации */
+transform: scale(1); /* преобразование отсутствует */
+}
+100% { /* стили применяются в конце анимации */
+stroke-dashoffset: 3100; /* смещение тире равно длине тире и пробелов между ними, умноженной на 2 */
+fill: var(--pink); /* заливка розового цвета, используется переменная цвета */
+}
+}
+
+/*svg*/
+
+      

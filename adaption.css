@@ -1,0 +1,98 @@
+@media screen and (max-width: 1480px) and (min-width:1366px ) {
+    nav{
+        margin-left: auto;
+    margin-right: auto
+    }
+    .center h1{
+        font-size: 55px;
+        text-align: center;
+}
+    .center p{
+               margin-bottom: 260px;
+        text-align: center;
+        
+    }
+  .page{
+        font-size: 22px;
+    }
+    .write {
+        margin: 10px;
+  padding: 15px;
+  width: 300px;
+    }
+    #date{
+        margin: 10px;
+  padding: 15px;
+  width: 300px;
+    }
+    body {
+        font-size: 22px;
+    }
+    .round{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 376px) and (min-width:100px)
+{
+    .menu{
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    text-align: center;
+    margin-top: 1px;
+
+    }
+
+    .menu a{
+        padding: 1px;
+        text-align: center;
+    }
+    .center h1{
+        font-size: 4vw; 
+    }
+    .center p{
+        font-size: 3vw;
+        margin-bottom: 350px;
+    }
+    footer{
+        padding: 5px;
+        
+    }
+    #about {
+        font-size: 7vw;
+    }
+    .page{
+    text-align: center;
+    }
+    .page1 {
+        width: 200%;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    p {
+        text-align: center;
+    }
+    .photo1 {
+        flex-wrap: wrap;
+
+}
+    .photo1 img {
+        max-width: 100%;
+    }
+    iframe {
+        width: 350px;
+        height: 400px;
+    }
+    .table {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width:1366px)
+{
+.w-100 {
+  max-width: 100%;
+}
+
+}
